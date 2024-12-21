@@ -54,3 +54,9 @@ variable "subnet_id" {
   description = "Subnet ID"
   default     = "subnet-0c9368bf408d2e0ec"
 }
+
+variable "sg_id" {
+  type        = string
+  description = "Security Group ID"
+  default     = "sg-0416ddf8e58428a0c"
+}
