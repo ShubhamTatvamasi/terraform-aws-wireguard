@@ -19,7 +19,7 @@ variable "sg_udp_ports" {
 variable "instance_type" {
   type        = string
   description = "Instance Type"
-  default     = "t2.micro"
+  default     = "t4g.nano"
 }
 
 variable "volume_size" {
@@ -43,20 +43,25 @@ variable "spot_type" {
   default = "one-time"
 }
 
+variable "architecture" {
+  type    = string
+  default = "arm64"
+}
+
 variable "vpc_id" {
   type        = string
   description = "VPC ID"
-  default     = "vpc-09182436c9f39bb95"
+  default     = "vpc-08602c57bc3adf384"
 }
 
 variable "subnet_id" {
   type        = string
   description = "Subnet ID"
-  default     = "subnet-0c9368bf408d2e0ec"
+  default     = "subnet-02882b68cf38556c5"
 }
 
 variable "sg_id" {
   type        = string
   description = "Security Group ID"
-  default     = "sg-0416ddf8e58428a0c"
+  default     = "sg-068d302c94a794966"
 }

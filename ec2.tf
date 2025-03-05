@@ -12,6 +12,8 @@ module "ec2_instance" {
   key_name      = aws_key_pair.ssh-key.key_name
   subnet_id     = var.subnet_id
 
+  ignore_ami_changes = true
+
   vpc_security_group_ids = [
     aws_security_group.ec2_sg.id,
     var.sg_id
